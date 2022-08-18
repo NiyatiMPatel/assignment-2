@@ -1,0 +1,39 @@
+.portal {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../portal-images/background-2.jpg) center/cover;
+}
+
+.portal-btn {
+  padding: 0.9375rem 1.875rem;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.portal-btn::after {
+  background-image: url(../icon-svg/plus-solid.svg);
+  width: 22px;
+  height: 22px;
+  background-size: 22px;
+}
+
+.portal-btn:not(.collapsed)::after {
+  background-image: url(../icon-svg/plus-solid.svg);
+  transform: rotate(45deg);
+}
+
+.portal-body {
+  padding: 0 1.875rem 0.9375rem 1.875rem;
+}
+
+.sign-item {
+  border: 1px solid transparent !important;
+  border-bottom-color: #dddddd !important;
+}
+
+.sign-item:hover {
+  border: 1px solid #9c9c9c !important;
+}
+
+.margin-top {
+  margin-top: 0.125rem;
+}

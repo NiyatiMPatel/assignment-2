@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- BOOTSTRAP 5.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- FONT AWESOME ICONS -->
+  <script src="https://kit.fontawesome.com/22503eb10e.js" crossorigin="anonymous"></script>
+  <!-- HEADROOM.JS -->
+  <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+  <!-- GOOGLE FONTS OPEN SANS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- ADOBE FONTS MULI -->
+  <link rel="stylesheet" href="https://use.typekit.net/kwe3rqd.css" />
+  <!-- LOCAL STYLESHEETS/CSS -->
+  <link rel="stylesheet" href="./css/commonstyles.css" />
+  <link rel="stylesheet" href="./css/header-footer.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
+  <link rel="stylesheet" href="./css/mediaquery.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- HEADER START -->
+
+  <header class="header header-dark header-sticky bottom-divider">
+    <nav class="navbar navbar-expand-xl navbar-light  p-xl-0 py-3">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./icon-svg/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars text-white menu-toggle-btn"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-xl-0 navbar-nav-scroll w-100 justify-content-xl-end align-items-xl-center align-items-start main-menu">
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./product.html">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./portal.html">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./profile.html">MY ACCOUNT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./contact.html">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#!" data-bs-toggle="modal" data-bs-target="#navbar-search">
+                <i class="fa-solid fa-magnifying-glass nav-link p-0"></i>
+              </a>
+            </li>
+            <li class="nav-item cart p-0">
+              <a data-bs-toggle="modal" data-bs-target="#navbar-cart" class="nav-link p-0">
+                <span class="cart-link">Cart</span><span class="cart-qty-link">2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HEADER END -->
+
+  <!-- SEARCH MODAL START -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="navbar-search" tabindex="-1" aria-labelledby="navbar-search-modal" aria-hidden="true">
+    <div class="modal-dialog search-modal-dialog">
+      <div class="modal-content search-modal-content">
+        <div class="modal-header search-modal-header">
+          <form class="d-flex search-form w-100">
+            <input class="form-control w-100 border-0" type="search" placeholder="Type your search here"
+              aria-label="Search">
+          </form>
+          <button type="button" class="btn-close search-close-button" data-bs-dismiss="modal" aria-label="Close"><i
+              class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH MODAL END -->
+
+  <!-- CART MODAL START -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="navbar-cart" tabindex="-1" aria-labelledby="navbar-cart-label" aria-hidden="true">
+    <div class="modal-dialog cart-modal-dialog">
+      <div class="modal-content cart-modal-content">
+
+        <div class="modal-header cart-modal-header">
+          <h5 class="modal-title cart-modal-title" id="navbar-cart-label">Cart</h5>
+          <button type="button" class="btn-close cart-close-button" data-bs-dismiss="modal" aria-label="Close"><i
+              class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="modal-body cart-modal-body">
+
+          <div class="row g-3">
+            <!-- ITEM-1 START -->
+            <div class="col-12">
+              <div class="cart-item cart-item-sm">
+                <div class="row align-items-center">
+                  <div class="col-lg-3">
+                    <div class="media media-product overflow-hidden">
+                      <a href="#!"><img src="./cart-images/product-3.jpg" alt=""
+                          class="w-100 cart-item-image overflow-hidden"></a>
+                    </div>
+                  </div>
+                  <div class=" col-lg-5 media-body">
+                    <h5 class="media-title">Black IC Pendant Light</h5>
+                    <span class="media-subtitle">Black, Steel</span>
+                  </div>
+                  <div class="col-lg-2 text-center text-lg-end">
+                    <span class="cart-item-price">$90</span>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center item-remove-btn">
+                      <a href="#!" class="cart-item-close"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM-1 END -->
+
+            <!-- ITEM-2 START -->
+            <div class="col-12">
+              <div class="cart-item cart-item-sm">
+                <div class="row align-items-center">
+                  <div class="col-lg-3">
+                    <div class="media media-product overflow-hidden">
+                      <a href="#!"><img src="./cart-images/product-4.jpg" alt=""
+                          class="w-100 cart-item-image overflow-hidden"></a>
+                    </div>
+                  </div>
+                  <div class=" col-lg-5 media-body">
+                    <h5 class="media-title">Red Analog Magazine Rack</h5>
+                    <span class="media-subtitle">Red</span>
+                  </div>
+                  <div class="col-lg-2 text-center text-lg-end">
+                    <span class="cart-item-price">$120</span>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center item-remove-btn">
+                      <a href="#!" class="cart-item-close"><i class="fa-solid fa-xmark"></i></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM-2 END -->
+
+            <!-- ITEM-3 START -->
+            <div class="col-12">
+              <div class="cart-item cart-item-sm">
+                <div class="row align-items-center">
+                  <div class="col-lg-3">
+                    <div class="media media-product overflow-hidden">
+                      <a href="#!"><img src="./cart-images/product-24.jpg" alt=""
+                          class="w-100 cart-item-image overflow-hidden"></a>
+                    </div>
+                  </div>
+                  <div class=" col-lg-5 media-body">
+                    <h5 class="media-title">Closca Helmet</h5>
+                    <span class="media-subtitle">Black</span>
+                  </div>
+                  <div class="col-lg-2 text-center text-lg-right">
+                    <span class="cart-item-price">$132</span>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center item-remove-btn">
+                      <a href="#!" class="cart-item-close"><i class="fa-solid fa-xmark"></i></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM-3 END -->
+          </div>
+
+        </div>
+
+        <div class="modal-footer cart-modal-footer">
+          <div class="container-fluid">
+            <div class="row g-0">
+              <div class="col d-none d-md-block view-cart-wrapper text-center">
+                <a href="#!" class="btn btn-lg btn-block view-cart text-dark w-100">VIEW CART</a>
+              </div>
+              <div class="col checkout-cart-wrapper text-center">
+                <a href="#!" class="btn btn-lg btn-block checkout-cart text-white w-100">CHECKOUT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CART MODAL END -->
+
+  <!-- ---------------------------------------------------------------------------- -->
+  <!-- BANNER START -->
+  <section class="contact-banner">
+    <div class="container">
+      <div class="row cb-bottom-margin">
+        <div class="col-md-6 col-12">
+          <div class="contact-banner-title">
+            <h1 class="fw-light text-dark">
+              <b class="d-block h1 text-dark">Get in touch!</b>
+              It's free
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-5 col-lg-4 col-12 contact-banner-content ">
+          <span class="topic-heading">FIND US</span>
+          <p class="my-1 text-dark">
+            123 6th St. <br />
+            Melbourne, FL 32904 <br />
+            +01 123 456 7890
+          </p>
+          <a href="#!" class="position-relative text-hover-effect arrow">
+            GET ROUTES
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-5 col-12 contact-banner-content">
+          <span class="topic-heading">CONTACT US</span>
+          <p class="my-1 text-dark">
+            Phone: +1 234 567 89 <br />
+            Fax: +1 234 567 89
+          </p>
+          <a href="#!" class="position-relative text-hover-effect arrow">
+            CONTACT@WEBUILDTHEMES.COM
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- BANNER END -->
+
+  <!-- MAP START -->
+  <section class="map py-0">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.361280743092!2d-74.00832638434458!3d40.71006264567046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sin!4v1660150099177!5m2!1sen!2sin"
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <!-- MAP END -->
+
+  <!-- CONTACT-FORM START -->
+  <section class="contact-form">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-xl-4 col-12">
+          <div class="form-text">
+            <h2 class="fw-light text-dark"><b class="h2 text-dark">Get in touch</b> with us by filling out our contact
+              form.</h2>
+            <p>We don't spam. Promise!</p>
+          </div>
+        </div>
+        <div class="col-xl-8 col-12 form-wrapper">
+          <div class="row g-2">
+            <div class="form-group col-md-6 col-12">
+              <label for="contact-first-name" class="form-label">FIRST NAME</label>
+              <input type="text" class="form-control" id="contact-first-name">
+            </div>
+            <div class="form-group col-md-6 col-12">
+              <label for="contact-email" class="form-label">EMAIL</label>
+              <input type="email" class="form-control" id="contact-email">
+            </div>
+            <div class="form-group col-12">
+              <label for="subject" class="form-label">SUBJECT</label>
+              <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="form-group col-12">
+              <label for="contact-message" class="form-label">MESSAGE</label>
+              <textarea class="form-control" id="contact-message" rows="3"></textarea>
+            </div>
+            <div class="form-check form-switch col-12">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Subscribe me to weekly newsletter</label>
+            </div>
+            <div class="form-btn col-12 mt-2">
+              <a href="#!" class="btn btn-primary text-white">SEND MESSAGE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT-FORM END -->
+
+  <!-- FOOTER START -->
+
+  <footer class="bg-dark py-0">
+    <div class="container">
+      <div class="row row-cols-xl-2 row-cols-1 footer-divider">
+        <div class="col footer-col ">
+          <div class="row">
+            <div class="col col-md-8 col-12">
+              <div class="footer-content bottom-margin">
+                <p>
+                  Thanks to
+                  <a href="https://www.opumo.com" class="position-relative text-hover-effect  text-white">Opumo</a>
+                  for the images used in this demo theme. Head over to
+                  <a href="https://www.opumo.com" class="position-relative text-hover-effect  text-white">their
+                    store</a>
+                  to get these products.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-md-10 col-12">
+              <div class="footer-content">
+                <h4 class="footer-h4">QUICK LINKS</h4>
+                <ul class="quick-link-nav list-group flex-row flex-wrap text-white">
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="./about.html" class="position-relative text-hover-effect text-white footer-link">About</a>
+                  </li>
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="./contact.html" class="position-relative text-hover-effect text-white footer-link">Contact
+                      Us</a>
+                  </li>
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="./faq.html" class="position-relative text-hover-effect text-white footer-link">FAQ</a>
+                  </li>
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="#!" class="position-relative text-hover-effect text-white footer-link">Blog</a>
+                  </li class="list-group-item">
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="#!" class="position-relative text-hover-effect text-white footer-link">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col footer-col">
+          <div class="row justify-content-xl-end bottom-margin ">
+            <div class="col col-xl-10 col-12">
+              <div class="footer-inner">
+                <h4 class="footer-h4">SUBSCRIBE</h4>
+                <div class="input-group ">
+                  <input type="email" class="form-control form-control-lg text-white bg-transparent" placeholder="Email"
+                    aria-label="Subscriber's email" aria-describedby="basic-addon2">
+                  <button class="btn bg-white text-dark sub-btn" type="button" id="button-addon2">SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-xl-end">
+            <div class="col col-xl-10 col-12">
+              <div class="footer-inner">
+                <h4 class="footer-h4">fOLLOW US</h4>
+                <ul class="social-link-list d-flex">
+                  <li class="social-link-item"><a href="#!" class="social-link"><i
+                        class="fa-brands fa-facebook-f"></i></a></li>
+                  <li class="social-link-item"><a href="#!" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="social-link-item"><a href="#!" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER END -->
+
+  <!-- BOOTSTRAP 5.1 SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- HEADROOM SCRIPT -->
+
+  <script>
+    // import Headroom from "headroom.js";
+    // grab an element
+    let header = document.querySelector("header");
+    // construct an instance of Headroom, passing the element
+    let headroom = new Headroom(header);
+    // initialise
+    headroom.init();
+  </script>
+
+</body>
+
+</html>

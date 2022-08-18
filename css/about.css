@@ -1,0 +1,112 @@
+/* <!-- OUR STORY START  --> */
+
+.our-story {
+  background: #3b416b;
+  padding-top: 10rem;
+}
+
+.our-story-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.about-para {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem !important;
+  margin-bottom: 1rem;
+}
+
+.our-story-two,
+.inner-description p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* <!-- OUR STORY END  --> */
+
+/* <!-- IMAGE GALLERY START --> */
+
+/* .our-story-image-wrapper {
+  margin-bottom: 6.25rem;
+}
+
+.image-2 {
+  object-fit: cover;
+} */
+
+/* <!-- IMAGE GALLERY END --> */
+
+/* <!-- GUARANTEE-WARRANTY START --> */
+
+.inner-description h4 {
+  margin-bottom: 0.5rem;
+}
+
+.inner-icon i {
+  font-size: 2rem;
+}
+
+/* <!-- GUARANTEE-WARRANTY END --> */
+
+/* <!-- OUR PRODUCTS START --> */
+
+.products-para {
+  color: #555;
+}
+
+/* <!-- OUR PRODUCTS END --> */
+
+/* <!-- PROJECT IMAGE BANNER START --> */
+.project-wrapper {
+  background: #4f944f;
+}
+
+.project-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.project-banner-text a.arrow {
+  padding-right: 12px;
+}
+.project-banner-text a:hover,
+.project-banner-text a:hover i {
+  color: #fff;
+}
+
+.project-banner-text a i {
+  margin-left: 5px;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+
+.project-banner-text a:hover i {
+  transform: translateX(10px);
+}
+
+/* <!-- PROJECT IMAGE BANNER END --> */
+
+/* <!-- NUMBERS START --> */
+
+.number-title-wrapper {
+  margin-bottom: 1.5rem;
+}
+.number-title h2 {
+  flex: 0;
+}
+
+.number-title h2::after {
+  content: "";
+  flex-grow: 1;
+  margin-left: 1.25rem;
+  border-top: 1px solid #dddddd;
+}
+
+.number-description p {
+  padding-right: 5px;
+}
+
+/* <!-- NUMBERS END --> */

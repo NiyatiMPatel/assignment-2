@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- BOOTSTRAP 5.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- FONT AWESOME ICONS -->
+  <script src="https://kit.fontawesome.com/22503eb10e.js" crossorigin="anonymous"></script>
+  <!-- HEADROOM.JS -->
+  <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
+  <!-- GOOGLE FONTS OPEN SANS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- ADOBE FONTS MULI -->
+  <link rel="stylesheet" href="https://use.typekit.net/kwe3rqd.css" />
+  <!-- LOCAL STYLESHEETS/CSS -->
+  <link rel="stylesheet" href="./css/commonstyles.css" />
+  <link rel="stylesheet" href="./css/header-footer.css" />
+  <link rel="stylesheet" href="./css/faq.css" />
+  <link rel="stylesheet" href="./css/mediaquery.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- HEADER START -->
+
+  <header class="header header-dark header-sticky bottom-divider">
+    <nav class="navbar navbar-expand-xl navbar-light  p-xl-0 py-3">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./icon-svg/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars text-white menu-toggle-btn"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav me-auto my-2 my-xl-0 navbar-nav-scroll w-100 justify-content-xl-end align-items-xl-center align-items-start main-menu">
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./product.html">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./portal.html">LOGIN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./profile.html">MY ACCOUNT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-hover-effect" href="./contact.html">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#!" data-bs-toggle="modal" data-bs-target="#navbar-search">
+                <i class="fa-solid fa-magnifying-glass nav-link p-0"></i>
+              </a>
+            </li>
+            <li class="nav-item cart p-0">
+              <a data-bs-toggle="modal" data-bs-target="#navbar-cart" class="nav-link p-0">
+                <span class="cart-link">Cart</span><span class="cart-qty-link">2</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HEADER END -->
+
+  <!-- SEARCH MODAL START -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="navbar-search" tabindex="-1" aria-labelledby="navbar-search-modal" aria-hidden="true">
+    <div class="modal-dialog search-modal-dialog">
+      <div class="modal-content search-modal-content">
+        <div class="modal-header search-modal-header">
+          <form class="d-flex search-form w-100">
+            <input class="form-control w-100 border-0" type="search" placeholder="Type your search here"
+              aria-label="Search">
+          </form>
+          <button type="button" class="btn-close search-close-button" data-bs-dismiss="modal" aria-label="Close"><i
+              class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEARCH MODAL END -->
+
+  <!-- CART MODAL START -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="navbar-cart" tabindex="-1" aria-labelledby="navbar-cart-label" aria-hidden="true">
+    <div class="modal-dialog cart-modal-dialog">
+      <div class="modal-content cart-modal-content">
+
+        <div class="modal-header cart-modal-header">
+          <h5 class="modal-title cart-modal-title" id="navbar-cart-label">Cart</h5>
+          <button type="button" class="btn-close cart-close-button" data-bs-dismiss="modal" aria-label="Close"><i
+              class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="modal-body cart-modal-body">
+
+          <div class="row g-3">
+            <!-- ITEM-1 START -->
+            <div class="col-12">
+              <div class="cart-item cart-item-sm">
+                <div class="row align-items-center">
+                  <div class="col-lg-3">
+                    <div class="media media-product overflow-hidden">
+                      <a href="#!"><img src="./cart-images/product-3.jpg" alt=""
+                          class="w-100 cart-item-image overflow-hidden"></a>
+                    </div>
+                  </div>
+                  <div class=" col-lg-5 media-body">
+                    <h5 class="media-title">Black IC Pendant Light</h5>
+                    <span class="media-subtitle">Black, Steel</span>
+                  </div>
+                  <div class="col-lg-2 text-center text-lg-end">
+                    <span class="cart-item-price">$90</span>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center item-remove-btn">
+                      <a href="#!" class="cart-item-close"><i class="fa-solid fa-xmark"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM-1 END -->
+
+            <!-- ITEM-2 START -->
+            <div class="col-12">
+              <div class="cart-item cart-item-sm">
+                <div class="row align-items-center">
+                  <div class="col-lg-3">
+                    <div class="media media-product overflow-hidden">
+                      <a href="#!"><img src="./cart-images/product-4.jpg" alt=""
+                          class="w-100 cart-item-image overflow-hidden"></a>
+                    </div>
+                  </div>
+                  <div class=" col-lg-5 media-body">
+                    <h5 class="media-title">Red Analog Magazine Rack</h5>
+                    <span class="media-subtitle">Red</span>
+                  </div>
+                  <div class="col-lg-2 text-center text-lg-end">
+                    <span class="cart-item-price">$120</span>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center item-remove-btn">
+                      <a href="#!" class="cart-item-close"><i class="fa-solid fa-xmark"></i></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM-2 END -->
+
+            <!-- ITEM-3 START -->
+            <div class="col-12">
+              <div class="cart-item cart-item-sm">
+                <div class="row align-items-center">
+                  <div class="col-lg-3">
+                    <div class="media media-product overflow-hidden">
+                      <a href="#!"><img src="./cart-images/product-24.jpg" alt=""
+                          class="w-100 cart-item-image overflow-hidden"></a>
+                    </div>
+                  </div>
+                  <div class=" col-lg-5 media-body">
+                    <h5 class="media-title">Closca Helmet</h5>
+                    <span class="media-subtitle">Black</span>
+                  </div>
+                  <div class="col-lg-2 text-center text-lg-right">
+                    <span class="cart-item-price">$132</span>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <div class="rounded-circle d-flex align-items-center justify-content-center item-remove-btn">
+                      <a href="#!" class="cart-item-close"><i class="fa-solid fa-xmark"></i></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ITEM-3 END -->
+          </div>
+
+        </div>
+
+        <div class="modal-footer cart-modal-footer">
+          <div class="container-fluid">
+            <div class="row g-0">
+              <div class="col d-none d-md-block view-cart-wrapper text-center">
+                <a href="#!" class="btn btn-lg btn-block view-cart text-dark w-100">VIEW CART</a>
+              </div>
+              <div class="col checkout-cart-wrapper text-center">
+                <a href="#!" class="btn btn-lg btn-block checkout-cart text-white w-100">CHECKOUT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CART MODAL END -->
+
+  <!-- ------------------------------------------------------------------ -->
+  <!-- BREADCRUMB START -->
+  <section class="breadcrumbs bottom-divider">
+    <div class="container">
+      <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item">
+            <a href="./index.html" class="text-hover-effect">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- BREADCRUMB END -->
+
+  <!-- PAGE HEADING/TITLE START -->
+
+  <section class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="title">
+            <h1>FAQ</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PAGE HEADING/TITLE END -->
+
+  <!-- ORDER ACCORDION-1 START -->
+  <section class="order-acc bg-light">
+    <div class="container">
+      <div class="row g-md-4 g-2">
+        <div class="col-md-4 col-lg-3 col-12">
+          <div class="order-inner">
+            <h3>Order</h3>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-12">
+          <div class="order-inner">
+            <!-- ACCORDION START -->
+
+            <div class="accordion accordion-flush" id="order-accordion">
+              <!-- ITEM-1 START -->
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark pt-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne">
+                    Can I add items to my order ?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#order-accordion">
+                  <div class="accordion-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Illum ut ipsam optio et doloribus aut, magnam repellendus
+                    nostrum earum consequatur. Sunt voluptate, aperiam
+                    voluptatum, rem vero deleniti veniam omnis ipsum.
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-1 END -->
+              <!-- ITEM-2 START -->
+
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo">
+                    Can I cancel my order ?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#order-accordion">
+                  <div class="accordion-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aspernatur sint illo deleniti quod harum cupiditate
+                    asperiores molestias, enim quam fugit debitis, dolorem
+                    omnis tenetur veniam delectus non doloribus tempora,
+                    dignissimos.
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-2 END -->
+              <!-- ITEM-3 START -->
+
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                    aria-controls="flush-collapseThree">
+                    Can I change my address ?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#order-accordion">
+                  <div class="accordion-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vel corporis magni sit dolore nam modi beatae, inventore,
+                    dolor dolorem. Ad quo commodi assumenda voluptates illum
+                    porro adipisci in aliquid distinctio?
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-3 END -->
+              <!-- ITEM-4 START -->
+
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
+                    aria-controls="flush-collapseFour">
+                    Can I merge my orders ?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                  data-bs-parent="#order-accordion">
+                  <div class="accordion-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vel corporis magni sit dolore nam modi beatae, inventore,
+                    dolor dolorem. Ad quo commodi assumenda voluptates illum
+                    porro adipisci in aliquid distinctio?
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-4 END -->
+            </div>
+            <!-- ACCORDION END -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ORDER ACCORDION-1 END -->
+
+  <!-- DELIVERY ACCORDION-2 START -->
+  <section class="delivery-acc">
+    <div class="container">
+      <div class="row g-md-4 g-2">
+        <div class="col-md-4 col-lg-3 col-12">
+          <div class="delivery-inner">
+            <h3>Delivery</h3>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-12">
+          <div class="delivery-inner">
+            <!-- ACCORDION START -->
+
+            <div class="accordion accordion-flush" id="delivery-accordion">
+              <!-- ITEM-1 START -->
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark pt-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
+                    aria-controls="flush-collapseFive">
+                    Which carrier will deliver my order ?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                  data-bs-parent="#delivery-accordion">
+                  <div class="accordion-body faq-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin
+                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice
+                    lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim aesthetic synth nesciunt you probably haven't heard
+                    of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-1 END -->
+              <!-- ITEM-2 START -->
+
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingSix">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
+                    aria-controls="flush-collapseSix">
+                    Where is my order ?
+                  </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                  data-bs-parent="#delivery-accordion">
+                  <div class="accordion-body faq-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin
+                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice
+                    lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim aesthetic synth nesciunt you probably haven't heard
+                    of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-2 END -->
+              <!-- ITEM-3 START -->
+
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingSeven">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                    aria-controls="flush-collapseSeven">
+                    Will I have to pay some duties ?
+                  </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                  data-bs-parent="#delivery-accordion">
+                  <div class="accordion-body faq-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life
+                    accusamus terry richardson ad squid. 3 wolf moon officia
+                    aute, non cupidatat skateboard dolor brunch. Food truck
+                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                    tempor, sunt aliqua put a bird on it squid single-origin
+                    coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                    helvetica, craft beer labore wes anderson cred nesciunt
+                    sapiente ea proident. Ad vegan excepteur butcher vice
+                    lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim aesthetic synth nesciunt you probably haven't heard
+                    of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-3 END -->
+            </div>
+            <!-- ACCORDION END -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DELIVERY ACCORDION-2 END -->
+
+  <!-- RETURNS ACCORDION-3 START -->
+  <section class="order-acc bg-light">
+    <div class="container">
+      <div class="row g-md-4 g-2">
+        <div class="col-md-4 col-lg-3 col-12">
+          <div class="returns-inner">
+            <h3>Returns</h3>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9 col-12">
+          <div class="returns-inner">
+            <!-- ACCORDION START -->
+
+            <div class="accordion accordion-flush" id="returns-accordion">
+              <!-- ITEM-1 START -->
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingEight">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark pt-0" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false"
+                    aria-controls="flush-collapseEight">
+                    I've received a wrong item
+                  </button>
+                </h2>
+                <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
+                  data-bs-parent="#returns-accordion">
+                  <div class="accordion-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Illum ut ipsam optio et doloribus aut, magnam repellendus
+                    nostrum earum consequatur. Sunt voluptate, aperiam
+                    voluptatum, rem vero deleniti veniam omnis ipsum.
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-1 END -->
+              <!-- ITEM-2 START -->
+
+              <div class="accordion-item bg-transparent faq-item">
+                <h2 class="accordion-header faq-header" id="flush-headingNine">
+                  <button class="accordion-button collapsed bg-transparent faq-btn text-dark" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false"
+                    aria-controls="flush-collapseNine">
+                    Can I exchange my order ?
+                  </button>
+                </h2>
+                <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine"
+                  data-bs-parent="#returns-accordion">
+                  <div class="accordion-body faq-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Aspernatur sint illo deleniti quod harum cupiditate
+                    asperiores molestias, enim quam fugit debitis, dolorem
+                    omnis tenetur veniam delectus non doloribus tempora,
+                    dignissimos.
+                  </div>
+                </div>
+              </div>
+              <!-- ITEM-2 END -->
+            </div>
+            <!-- ACCORDION END -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- RETURNS ACCORDION-3 END -->
+
+  <!-- FOOTER START -->
+
+  <footer class="bg-dark py-0">
+    <div class="container">
+      <div class="row row-cols-xl-2 row-cols-1 footer-divider">
+        <div class="col footer-col ">
+          <div class="row">
+            <div class="col col-md-8 col-12">
+              <div class="footer-content bottom-margin">
+                <p>
+                  Thanks to
+                  <a href="https://www.opumo.com" class="position-relative text-hover-effect  text-white">Opumo</a>
+                  for the images used in this demo theme. Head over to
+                  <a href="https://www.opumo.com" class="position-relative text-hover-effect  text-white">their
+                    store</a>
+                  to get these products.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-md-10 col-12">
+              <div class="footer-content">
+                <h4 class="footer-h4">QUICK LINKS</h4>
+                <ul class="quick-link-nav list-group flex-row flex-wrap text-white">
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="./about.html" class="position-relative text-hover-effect text-white footer-link">About</a>
+                  </li>
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="./contact.html" class="position-relative text-hover-effect text-white footer-link">Contact
+                      Us</a>
+                  </li>
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="./faq.html" class="position-relative text-hover-effect text-white footer-link">FAQ</a>
+                  </li>
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="#!" class="position-relative text-hover-effect text-white footer-link">Blog</a>
+                  </li class="list-group-item">
+                  <li class="list-group-item bg-transparent w-50 p-0">
+                    <a href="#!" class="position-relative text-hover-effect text-white footer-link">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col footer-col">
+          <div class="row justify-content-xl-end bottom-margin ">
+            <div class="col col-xl-10 col-12">
+              <div class="footer-inner">
+                <h4 class="footer-h4">SUBSCRIBE</h4>
+                <div class="input-group ">
+                  <input type="email" class="form-control form-control-lg text-white bg-transparent" placeholder="Email"
+                    aria-label="Subscriber's email" aria-describedby="basic-addon2">
+                  <button class="btn bg-white text-dark sub-btn" type="button" id="button-addon2">SUBSCRIBE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-xl-end">
+            <div class="col col-xl-10 col-12">
+              <div class="footer-inner">
+                <h4 class="footer-h4">fOLLOW US</h4>
+                <ul class="social-link-list d-flex">
+                  <li class="social-link-item"><a href="#!" class="social-link"><i
+                        class="fa-brands fa-facebook-f"></i></a></li>
+                  <li class="social-link-item"><a href="#!" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li class="social-link-item"><a href="#!" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER END -->
+
+  <!-- BOOTSTRAP 5.1 SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- HEADROOM SCRIPT -->
+
+  <script>
+    // import Headroom from "headroom.js";
+    // grab an element
+    let header = document.querySelector("header");
+    // construct an instance of Headroom, passing the element
+    let headroom = new Headroom(header);
+    // initialise
+    headroom.init();
+  </script>
+</body>
+
+</html>

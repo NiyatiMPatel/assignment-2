@@ -1,0 +1,43 @@
+/* <!-- HEADER START --> */
+/* <!-- HEADER END --> */
+
+/* <!-- BREADCRUMB START --> */
+/* <!-- BREADCRUMB END --> */
+
+/* <!-- PAGE HEADING/TITLE START --> */
+/* <!-- PAGE HEADING/TITLE END --> */
+
+/* <!-- ORDER ACCORDION-1 START --> */
+
+.faq-btn,
+.faq-item {
+  padding: 0.9375rem 0;
+}
+
+.faq-header {
+  font-family: "Open Sans", sans-serif;
+}
+
+.faq-btn::after {
+  background-image: url(../icon-svg/chevron-down-solid.svg);
+  width: 18px;
+  height: 18px;
+  background-size: 18px;
+}
+
+.faq-btn:not(.collapsed)::after {
+  background-image: url(../icon-svg/chevron-up-solid.svg);
+  transform: none;
+}
+
+.faq-body {
+  padding: 0 0 0.9375rem 0;
+}
+
+/* <!-- ORDER ACCORDION-1 END --> */
+
+/* <!-- DELIVERY ACCORDION-2 START --> */
+/* <!-- DELIVERY ACCORDION-2 END --> */
+
+/* <!-- RETURNS ACCORDION-3 START --> */
+/* <!-- RETURNS ACCORDION-3 END --> */
